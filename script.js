@@ -77,9 +77,19 @@ function shareAttendance() {
     return;
   }
 
-  const message = `*University of Calcutta*\n *MCA 2nd Sem Attendance*\n*Subject:* ${selectedSubject}\n*Date:* ${selectedDate}\n*Present Students:*\n${presentStudents.join(', ')}`;
-  const whatsappURL = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
-  window.open(whatsappURL, '_blank');
+  const message = `                           🌟 *University of Calcutta* 🌟
+
+📘 *MCA 2nd Sem Attendance*
+
+📚 *Subject:* ${selectedSubject}         
+📅 *Date:* ${selectedDate}
+
+✅ *Present Students:*
+${presentStudents.map((student, index) => `${student}`).join(', ')}`;
+
+const whatsappURL = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
+window.open(whatsappURL, '_blank');
+
 }
 
 shareButton.addEventListener('click', shareAttendance);
