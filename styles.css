@@ -1,0 +1,170 @@
+/* styles.css */
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to bottom,
+    #f0f7ff 50%,
+    #ffffff 50%
+  ); /* Dual background color */
+  color: #2a2a2a;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff; /* White container background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1e90ff; /* Calm blue for heading */
+  font-weight: 900;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+h4 {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+/* Controls Section */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.controls label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+  color: #555;
+}
+
+.controls select,
+.controls input[type="date"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #b0c4de; /* Light blue-gray border */
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.controls select:focus,
+.controls input[type="date"]:focus {
+  border-color: #1e90ff; /* Blue focus border */
+}
+
+.table_wrapper {
+  overflow: auto;
+}
+
+/* Table Section */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: linear-gradient(
+    to right,
+    #f9f9f9,
+    #ffffff
+  ); /* Dual-tone table background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+thead {
+  background-color: #1e90ff; /* Blue table header */
+  color: #ffffff;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #dcdcdc; /* Light gray border */
+  font-size: 1rem;
+}
+
+th {
+  font-size: 1.2rem;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f7ff; /* Soft light blue for even rows */
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff; /* Crisp white for odd rows */
+}
+
+/* Attendance Buttons */
+.attendance-btn {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.attendance-btn.present {
+  background-color: #32cd32; /* Lime green */
+  color: white;
+}
+
+.attendance-btn.absent {
+  background-color: #ff6347; /* Soft tomato red */
+  color: white;
+}
+
+.attendance-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Share Button */
+.share-btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background-color: #007bff; /* Vibrant blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 20px auto; /* Space around the button */
+  text-align: center;
+}
+
+.share-btn:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: scale(1.05);
+}
+
+/* Center the button */
+.share-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; /* Add space around the container */
+}

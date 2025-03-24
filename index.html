@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Attendance Tracker</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>University of Calcutta</h1>
+            <h1>MCA 2nd Sem Attendance</h1>
+            <div class="controls">
+                <div>
+                    <label for="subjectSelect">Select Subject:</label>
+                    <select id="subjectSelect">
+                        <option value="Advanced Networking">Advanced
+                            Networking</option>
+                        <option value="Economics and Accountancy">Economics and
+                            Accountancy</option>
+                        <option
+                            value="Distributed Systems and Cloud Computing">Distributed
+                            Systems and Cloud Computing</option>
+                        <option value="Machine Learning">Machine
+                            Learning</option>
+                        <option value="Environmental Science">Environmental
+                            Science</option>
+                        <option value="Software Engineering">Software
+                            Engineering</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="dateInput">Select Date:</label>
+                    <input type="date" id="dateInput">
+                </div>
+            </div>
+            <div class="table_wrapper">
+                <table>
+                    <tr>
+                        <h4>Student Roll Number</h4>
+                    </tr>
+                    <tbody id="attendanceTable">
+                        <!-- Rows will be dynamically generated -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
